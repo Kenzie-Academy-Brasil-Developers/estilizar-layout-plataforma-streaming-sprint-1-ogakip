@@ -17,101 +17,141 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 /* VARIÁVEIS */
 
 /*BODY*/
-	body{
-		background-color: #00002e;
-		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-	}
+body{
+	background-color: #00002e;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
 
 /*TOPO*/
 
 /*RODAPÉ*/
-	
+
 
 /*PÁGINA INICIAL*/
 
-	div.pg-home {
-		display: flex;
-		justify-content: center;
-	}
+div.pg-home {
+	display: flex;
+	justify-content: center;
+}
 
-	.section {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: cadetblue;
-	}
-	ul li {
-		list-style: none;
-	}
-	li {
-		width: 186px;
-		color: brown;
-	}
-	h2 {
-		font-size: 70px;
-		text-align: center;
-		color: white;
-		margin-bottom: 0px;
-	}
-	figure {
-		margin: 0;
+.section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: cadetblue;
+}
+ul li {
+	list-style: none;
+}
+li {
+	width: 186px;
+	color: brown;
+}
+h2 {
+	font-size: 70px;
+	text-align: center;
+	color: white;
+	margin-bottom: 0px;
+}
+figure {
+	margin: 0;
+}
+ul {
+	padding: 0px;
+	margin: 0;
+	width: 858px;
+	height: 40vh;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+}
+img {
+	width: 186px;
+	border: 2px solid transparent;
+}
+img:hover {
+	border: 2px solid white;;
+}
+footer  {
+	display: flex;
+	justify-content: center;
+}
+button {
+	padding: 15px 40px 15px 40px;
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	border-radius: 2px;
+	font-size: 15px;
+}
+button:hover {
+	cursor: pointer;
+}
+figcaption {
+	display: none;
+}
+h3 {
+	color: white;
+}
+.adicionar {
+	width: 100px;
+}
+
+@media (max-width: 870px) {
+	section {
+		flex-wrap: wrap;
+		width: 500px;
+		height: 600px;
 	}
 	ul {
-		padding: 0px;
-		margin: 0;
-		width: 858px;
-		height: 40vh;
+		flex-wrap: wrap;
+		width: 500px;
+		height: 600px;
+	}
+	.topo {
 		display: flex;
-		text-align: center;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 	}
-	img {
-		width: 186px;
-		border: 2px solid transparent;
+	h2 {
+		font-size: 50px;
 	}
-	img:hover {
-		border: 2px solid white;;
-	}
-	footer  {
+}
+
+@media (max-width: 550px) {
+	section {
+		width: 400px;
 		display: flex;
 		justify-content: center;
 	}
-	button {
-		padding: 15px 40px 15px 40px;
-		background-color: transparent;
-		color: white;
-		border: 1px solid white;
-		border-radius: 2px;
-		font-size: 15px;
+	ul {
+		width: 380px;
+		justify-content: space-around;
 	}
-	button:hover {
-		cursor: pointer;
+	li {
+		width: 150px;
 	}
-	figcaption {
-		display: none;
+	img {
+		width: 150px;
 	}
-	h3 {
-		color: white;
+	h2 {
+		font-size: 40px;
 	}
-	.adicionar {
+}
+
+@media (max-width: 400px) {
+	section {
+		width: 250px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	img {
+		width: 100px;
+	}
+	li {
 		width: 100px;
 	}
 
-	@media (max-width: 1080px) {
-		section {
-			flex-wrap: wrap;
-			width: 500px;
-			height: 600px;
-		}
-		ul {
-			flex-wrap: wrap;
-			width: 500px;
-			height: 600px;
-		}
-		.topo {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-	}
+}
